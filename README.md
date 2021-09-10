@@ -4,9 +4,9 @@ Repositorio para el versionamiento de talleres y tareas del curso Ciencia de dat
 
 ## Integrantes
 
-| Nombre | Usuario Uniandes | Usuario GitHub | Código |
-| :-: | :-: | :-: | :-: |
-| Alejandro Mantilla Redondo | a.mantillar | mantimantilla | 201711304 |
-| Felipe Gutierrez |...|...|...|
-| Jose Fernando Corzo |...|...|...|
+| Nombre | Usuario Uniandes | Usuario GitHub |
+| :-: | :-: | :-: |
+| Alejandro Mantilla Redondo | a.mantillar | mantimantilla |
+| Felipe Gutierrez | fa.gutierrez | FelipeAndrGut |
+| Jose Fernando Corzo | j.corzom | j.corzom |
 
