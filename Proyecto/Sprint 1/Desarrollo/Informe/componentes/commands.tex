@@ -1,0 +1,108 @@
+% !TEX root = ../main.tex
+% Included by MAIN.TEX
+
+%-------------------------------------------------------------
+%                      Own Commands
+%-------------------------------------------------------------
+
+% some abreviations ------------------------------------------
+\newcommand{\Reg}{$^{\textregistered}$}
+\newcommand{\reg}{$^{\textregistered}$ }
+\newcommand{\Tm}{\texttrademark}
+\newcommand{\tm}{\texttrademark~}
+\newcommand {\bsl} {$\backslash$}
+
+% formating --------------------------------------------------
+% Theorem & Co environments and counters
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{remark}[theorem]{Nota}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{equat}[theorem]{Equación}
+\newtheorem{example}[theorem]{Ejemplo}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+
+% Comentarios sobre el PDF para anotar feedback de las plenarias
+\newcommand{\feedbackans}[1]{\marginpar{\pdfcomment[opacity=0.9,hoffset=10pt,open=false,subject={Top2},author={Grupo}]{#1}}}
+
+\renewcommand\descriptionlabel[1]{\normalfont\bfseries{#1}}% Make description environment label bold
+% bold and typewritter font tu use as font=\monobold in description environments
+\newcommand*{\monobold}[1]{\textbf{\texttt{#1}}}
+
+
+
+% Mini lipsum para texto de relleno
+\newcommand\tinylipsum{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec mi et neque pharetra sollicitudin}
+
+% Caption near to the thing
+\newcommand{\addcaption}[1]{\vspace{-0.2cm}\caption{#1}}
+
+% inserting figures
+\newcommand{\insertfigure}[4]{ % Filename, Caption, Label, Width % of textwidth
+    \begin{figure}[H]
+      \centering
+      \includegraphics[width=#4\textwidth]{#1}
+      \addcaption{#2}
+      \label{#3}
+    \end{figure}
+}
+
+\definecolor{lighter-gray}{gray}{0.9}
+\arrayrulecolor{lighter-gray}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\renewcommand\theadfont{\normalsize\bfseries}
+
+\newcommand{\inserttable}[5]{ % Caption, tabular params, the table header, table contents, label
+  \vspace{0.2cm}
+    \begin{table}[H]
+    \begin{center}
+      \begin{tabular}{#2}
+        \hline
+        \rowcolor{lighter-gray}#3\\% encabezados de la tabla
+        \toprule
+        #4
+        \midrule
+              \end{tabular}
+    \end{center}
+    \addcaption{#1}\label{tab:#5}\par
+  \end{table}
+}
+
+\newcommand{\insertlongtable}[5]{ % Caption, tabular params, the table header, table contents, label
+  \vspace{0.2cm}
+      \begin{longtable}{#2}
+        \hline
+        \rowcolor{lighter-gray}#3\\% encabezados de la tabla
+        \toprule
+        #4
+        \midrule
+        \caption{#1}\label{tab:#5}
+      \end{longtable}
+}
+
+\newcommand{\nln}{\newline}
+
+% Referenciar tablas e figuras de forma más estética
+\newcommand{\rFig}[1]{Figura \ref{#1}}
+\newcommand{\rfig}[1]{figura \ref{#1}}
+\newcommand{\rTab}[1]{Tabla \ref{tab:#1}}
+\newcommand{\rtab}[1]{tabla \ref{tab:#1}}
+\newcommand{\rSec}[1]{Sección \ref{#1}}
+\newcommand{\rsec}[1]{sección \ref{#1}}
+\newcommand{\rChap}[1]{Capítulo \ref{#1}}
+\newcommand{\rchap}[1]{capítulo \ref{#1}}
+
+% comment that appears on the border - very practical !!!
+\newcommand{\comment}[1]{\marginpar{\raggedright \noindent \footnotesize {\textsl{#1}} }}
+
+% page clearing
+\newcommand{\clearemptydoublepage}{%
+  \ifthenelse{\boolean{@twoside}}{\newpage{\pagestyle{empty}\cleardoublepage}}%
+             {\clearpage}}
+
+\newcommand{\etAl}{\emph{et al.}\mbox{ }}
+
+\def\fixme{\colorbox{red}{\Large{FIXME}}}

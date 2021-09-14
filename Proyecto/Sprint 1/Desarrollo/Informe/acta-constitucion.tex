@@ -1,0 +1,55 @@
+\PassOptionsToPackage{final}{pdfcomment}
+\documentclass[11pt,
+              a4paper,
+              index=totoc,
+              parskip=half,
+              BCOR=0mm,
+              appendixprefix=true,
+              DIV=14,
+              twoside=false,
+              spanish,
+              bibliography=totoc]{scrreprt}
+
+\input{componentes/info}
+\input{componentes/settings}
+\input{componentes/commands}
+% paquete para que las tablas no tengan el nombre del capítulo ni sección
+\usepackage{chngcntr}
+
+\makeindex
+\begin{document}
+ \addtolength{\evensidemargin}{-12mm}
+
+ \input{acta/encabezado}
+ \noindent\rule{\textwidth}{0.5pt} %linea horizontal
+ \input{acta/titulo}
+  % andamiaje para que las secciones aparezcan sin capítulo, para subir las
+  % sub-secciones a secciones y etc
+ \renewcommand*{\thesection}{\arabic{section}}
+ \renewcommand*{\thechapter}{\ }
+ \counterwithout{figure}{chapter}
+ \counterwithout{table}{chapter}
+ \counterwithout{table}{section}
+ \let\oldsubsec\subsection
+ \let\oldsubsubsec\subsubsection
+ \renewcommand*{\subsection}{\section}
+ \renewcommand*{\subsubsection}{\oldsubsec}
+ \renewcommand*{\inserttable}{\insertlongtable}
+
+ \input{capitulos/contexto/acta-constitucion}
+
+ % más andamiaje
+ \renewcommand*{\subsection}{\oldsubsec}
+
+ \input{capitulos/contexto/alcance}
+ \input{capitulos/propuesta/suposiciones}
+ \input{capitulos/propuesta/restricciones}
+ \pagebreak
+ \input{capitulos/propuesta/riesgos}
+ \input{acta/participantes}
+ \renewcommand*{\subsubsection}{\section}
+ \input{capitulos/propuesta/entregables-organizacion}
+ \input{apendices/fechas-entregables-organizacion}
+ \input{acta/firmas}
+
+ \end{document}
