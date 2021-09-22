@@ -1,0 +1,62 @@
+\addchap{Sección de referencia}
+
+\section*{Citaciones a bibliografía}
+\tinylipsum Tomado de \cite{latex}.
+
+\section*{Notas al pie}
+\tinylipsum \footnote{Properly formatted clickable URL: \url{https://www.tum.de/}}
+
+\section*{Listas}
+\tinylipsum
+
+\tinylipsum
+\begin{enumerate}
+  \item \tinylipsum
+    \begin{enumerate}
+      \item \tinylipsum
+      \item \tinylipsum!
+    \end{enumerate}
+  \item \tinylipsum
+    \begin{itemize}
+      \item list
+      \item things!
+    \end{itemize}
+  \item \tinylipsum!
+\end{enumerate}
+
+\begin{itemize}
+  \item list
+  \item all
+  \item the
+  \item things!
+\end{itemize}
+\tinylipsum
+
+\section*{Comentarios al margen}
+Texto acá \comment{Comentarios allá} \tinylipsum
+
+\section*{Figuras}
+% Filename, Caption, Label, Width % of textwidth
+\tinylipsum
+\insertfigure{imagenes/edt/edt-nivel1.pdf}%
+{Plot de una función}{fig:fnplot}{0.7}
+\tinylipsum
+
+\section*{Tablas}
+% si es necesario que la tabla se divida entre dos páginas cambiar inserttable por insertlongtable
+\inserttable{Tabla de ejemplo}{C{11.7cm} C{2.6cm}}{
+\thead{N1} & \thead{N2}}{
+
+	R1 & R2 \\
+    \midrule
+	R3 & R4 \\
+}{label-ref-tabla}
+
+\tinylipsum
+
+\section*{Anotaciones sobre el pdf}
+
+\tinylipsum \feedbackans{Se agregó un lipsum no tan grande, pero se agregó} \tinylipsum \tinylipsum
+
+\section*{Referencias a partes del texto}
+Acá referenciamos la \rsec{section:lecciones-aprendidas} dentro del \rchap{chapter:conclusions}

@@ -1,0 +1,87 @@
+% -------------------------------------------------------------------------------
+% - CÓDIGO PARA MILESTONES - NO EDITAR! -----------------------------------------
+% NOTA esto es ligeramente complicado. Recomiendo hacerlo en otra plataforma e
+% importar la imagen
+
+\newcommand{\timeline}[2]{
+  % calcular separación entre entradas
+  \pgfmathsetmacro\position{#2/(#1)}
+  % rectángulo negro
+  \fill[fill=lighter-gray!80] (0,0.25*\position) rectangle (0.8,-1*#2);
+  % título
+  \node[fill=lighter-gray!80] at +(0.4,0.25*\position) {\Large{\textbf{Semana}}};
+  % nodos de las semanas. Se pueden acceder como w3, w4 etc
+  \foreach \x in {#1,...,1}{
+    \node at +(0.4,-1*\x*\position+0.5*\position) (w\x) {\textbf{\ifnum \x < 10 0\fi\x}};
+  }
+
+}
+
+\newcommand{\milestone}[5]{% l or r (left or right), week, vertical shift, color, text
+  % The bullet
+  \draw[double, fill=#4, color=#4] ([%
+  shift={(\ifx l#1 -0.5cm \else 0.5cm\fi, -#3)}% shift bullet to the left or right
+  ]#2.{\ifx l#1west\else east\fi}) circle [radius=0.13cm];
+  % The text
+  \node[%
+  anchor={{\ifx l#1east\else west\fi}},% force text to the left or right
+  % text width=0.42*\linewidth,%
+  fill=#4, fill opacity=0.3,%
+  align={\ifx l#1right\else left\fi},
+  text opacity=1]() at ([%
+  shift={({\ifx l#1-1.5cm\else1.5cm\fi},-#3)}%
+  ]#2.{\ifx l#1east\else west\fi}) {\small{#5}}; %shift text to l or r
+}
+% -------------------------------------------------------------------------------
+% -------------------------------------------------------------------------------
+
+\definecolor{docs}{HTML}{CEDE48}
+\definecolor{impl}{HTML}{37B7B5}
+\definecolor{form}{HTML}{F8B400}
+
+Los hitos de un proyecto simbolizan logros importantes en su avance, que pueden
+entenderse fácilmente sin detallar las tareas para en alcanzarlos.  Tomando
+como convención: \colorbox{docs!20}{documentación},
+\colorbox{impl!20}{implementación} y \colorbox{form!20}{formalización de
+conocimiento} se proponen los siguientes hitos.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \timeline{16}{17.9} % 16 semanas, altura
+
+    \milestone{l}{w1}{0.5cm}{docs}{Acta de constitución}
+    \milestone{l}{w2}{0}{docs}{Propuesta de proyecto}
+    \milestone{l}{w7}{0}{docs}{1er informe de avance}
+    \milestone{l}{w10}{0}{docs}{2o informe de avance}
+    \milestone{l}{w14}{0}{docs}{3er informe de avance}
+    \milestone{l}{w16}{0}{docs}{\textbf{Informe final}}
+
+    % iteracion 1
+    \milestone{l}{w4}{0}{form}{Reglas para ERM}
+    \milestone{r}{w4}{0.5cm}{impl}{Reglas para ERM en sistema experto}
+    \milestone{r}{w5}{0}{impl}{Módulo de ETL para moneda}
+    \milestone{l}{w5}{0.5cm}{form}{\textit{Mocks} para ERM}
+    \milestone{r}{w6}{0.5cm}{impl}{Visualizaciones para ERM}
+    \milestone{l}{w7}{0.6cm}{form}{Indicador de calidad para ERM}
+
+    % iteracion 2
+    \milestone{r}{w8}{0}{impl}{Indicador de calidad}
+    \milestone{l}{w8}{0.6cm}{form}{Escogencia de modelos a probar}
+    \milestone{r}{w9}{0.5cm}{impl}{Implementación de modelos (Iteración 1)}
+    \milestone{l}{w10}{0.6cm}{form}{\textit{Mocks} para Indicador de calidad}
+
+    % iteracion 3
+    \milestone{r}{w11}{0}{impl}{Visualizaciones de indicador de calidad}
+    \milestone{r}{w12}{0.5}{impl}{Implementación de modelos (Iteración 2)}
+    \milestone{l}{w12}{0}{form}{\textit{Mocks} de reportes gerenciales}
+    \milestone{l}{w13}{0}{form}{Escogencia de mejor modelo}
+    \milestone{r}{w13}{0.5cm}{impl}{Reportes gerenciales}
+    \milestone{r}{w14}{0.5cm}{impl}{Despliegue de herramienta}
+    \milestone{l}{w15}{0}{form}{Pruebas de la herramienta}
+
+  \end{tikzpicture}
+  \addcaption{Hitos identificados para el desarrollo del proyecto}
+  \label{fig:milestones}
+
+\end{figure}

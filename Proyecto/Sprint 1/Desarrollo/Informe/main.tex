@@ -1,0 +1,64 @@
+\documentclass[11pt,
+              a4paper,
+              index=totoc,
+              headsepline,
+              parskip=half,
+              BCOR=0mm,
+              appendixprefix=true,
+              DIV=14,
+              twoside=false,
+              spanish,
+              bibliography=totoc]{scrbook}
+
+% KOMA scrbook options:
+%  index=totoc: include an entry for the index in the table of contents.
+%  headsepline: use horizontal line under heading.
+%  footsepline: use horizontal line above footer.
+%  BCOR: binding correction (e.g.: BCOR=12mm)
+%  DIV: Number of sheet sections (used for layout) (e.g.: DIV=13)
+
+\input{componentes/info}
+\input{componentes/settings}
+\input{componentes/commands}
+\makeindex
+\begin{document}
+
+ \frontmatter
+
+ \input{componentes/cover}
+
+ \clearemptydoublepage
+
+ \input{componentes/titlepage}
+ %\input{componentes/acknowledgements}
+
+ \clearemptydoublepage
+ \tableofcontents
+
+ \clearemptydoublepage
+ \mainmatter
+ \input{componentes/text}
+
+ %\clearemptydoublepage
+ %\phantomsection{}
+ %\addcontentsline{toc}{chapter}{Índice de figuras}
+ %\listoffigures
+
+ %\clearemptydoublepage
+ %\renewcommand\listtablename{Índice de tablas}
+ %\phantomsection{}
+ %\addcontentsline{toc}{chapter}{Índice de tablas}
+ %\listoftables
+
+ %\clearemptydoublepage
+ %\begingroup
+ % \raggedright
+ % \bibliography{bibliography/literature}
+ %\endgroup
+ %\clearemptydoublepage
+ %\input{apendices/text}
+
+ %\clearemptydoublepage
+
+
+\end{document}

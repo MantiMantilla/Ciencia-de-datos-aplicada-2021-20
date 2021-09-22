@@ -1,0 +1,36 @@
+% !TEX root = ../main.tex
+% The front cover.
+% Included by MAIN.TEX
+
+%--------------------------------------------------
+% The Front Cover
+%--------------------------------------------------
+
+% correct BCOR - undo at the end !!!
+\def\bcorcor{0.15cm}
+\addtolength{\hoffset}{\bcorcor}
+
+\thispagestyle{empty}
+
+\vspace{4cm}
+\begin{center}
+ \includegraphics[width=4cm]{\universityLogo}\\
+ \vspace{5mm}
+ \Large \program \\
+ \Large \university
+\end{center}
+
+\vspace{30mm}
+\begin{center}
+    {\Large \doctype}\\
+    \vspace{5mm}
+    {\Huge \textbf\strut\title\strut}\\
+    \vspace{30mm}
+    {\LARGE  \strut\firstauthor\strut}\\
+    {\LARGE  \strut\secondauthor\strut}\\
+    {\LARGE  \strut\thirthauthor\strut}%\\
+    %{\LARGE  \strut\fourthauthor\strut}\\
+
+    \vspace{\fill}
+    \includegraphics[width=4cm]{\universityLogo}
+\end{center}
