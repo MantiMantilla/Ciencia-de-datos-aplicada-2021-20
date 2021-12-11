@@ -1,0 +1,198 @@
+YEAR,MONTH_NAME,DAY,EVENT_INDICATOR,EVENT_TYPE
+2020,February,6,1,Winter Storm
+2020,February,27,1,Strong Wind
+2020,February,7,1,High Wind
+2020,June,18,1,Strong Wind
+2020,June,27,1,Heat
+2020,January,12,1,Thunderstorm Wind
+2020,January,15,1,Ice Storm
+2020,December,16,1,Winter Weather
+2020,October,7,1,Winter Weather
+2020,December,25,1,Winter Storm
+2020,March,20,1,Winter Storm
+2020,January,25,1,Thunderstorm Wind
+2020,January,16,1,Flood
+2020,January,6,1,Thunderstorm Wind
+2020,January,18,1,Strong Wind
+2020,February,26,1,Strong Wind
+2020,March,23,1,Strong Wind
+2020,January,8,1,Lake-Effect Snow
+2020,February,9,1,Winter Weather
+2020,February,18,1,Winter Weather
+2020,March,29,1,Blizzard
+2020,March,3,1,Winter Weather
+2020,March,9,1,Lake-Effect Snow
+2020,February,28,1,Winter Weather
+2020,May,27,1,Winter Weather
+2020,May,15,1,Winter Storm
+2020,May,29,1,Hail
+2020,May,5,1,High Wind
+2020,May,10,1,Thunderstorm Wind
+2020,May,12,1,Heavy Snow
+2020,May,13,1,High Wind
+2020,May,14,1,Wildfire
+2020,May,11,1,Winter Weather
+2020,May,8,1,Winter Storm
+2020,May,9,1,Thunderstorm Wind
+2020,April,26,1,Thunderstorm Wind
+2020,April,9,1,Lake-Effect Snow
+2020,April,13,1,Thunderstorm Wind
+2020,April,17,1,Frost/Freeze
+2020,April,21,1,Frost/Freeze
+2020,April,30,1,Frost/Freeze
+2020,April,7,1,Frost/Freeze
+2020,January,1,1,Frost/Freeze
+2020,January,19,1,Flood
+2020,January,17,1,Hail
+2020,May,7,1,Hail
+2020,May,25,1,Tornado
+2020,August,25,1,Winter Weather
+2020,August,13,1,Tornado
+2020,August,3,1,Frost/Freeze
+2020,May,22,1,Frost/Freeze
+2020,June,10,1,Winter Weather
+2020,June,22,1,Thunderstorm Wind
+2020,February,19,1,High Wind
+2020,June,20,1,Winter Weather
+2020,July,19,1,Thunderstorm Wind
+2020,July,10,1,Thunderstorm Wind
+2020,July,11,1,Strong Wind
+2020,July,6,1,Strong Wind
+2020,July,8,1,Hail
+2020,July,1,1,Thunderstorm Wind
+2020,July,2,1,Flash Flood
+2020,July,22,1,Lakeshore Flood
+2020,July,27,1,Lakeshore Flood
+2020,July,16,1,Lake-Effect Snow
+2020,July,3,1,Lake-Effect Snow
+2020,July,9,1,Lake-Effect Snow
+2020,July,14,1,High Wind
+2020,July,29,1,Cold/Wind Chill
+2020,July,7,1,Strong Wind
+2020,December,26,1,Heavy Snow
+2020,October,6,1,Flood
+2020,November,1,1,High Wind
+2020,November,15,1,Thunderstorm Wind
+2020,July,30,1,Funnel Cloud
+2020,July,31,1,Hail
+2020,December,17,1,Thunderstorm Wind
+2020,August,2,1,Thunderstorm Wind
+2020,August,27,1,Winter Weather
+2020,July,23,1,Flash Flood
+2020,August,4,1,Lakeshore Flood
+2020,August,15,1,Thunderstorm Wind
+2020,August,29,1,Rip Current
+2020,August,24,1,Lake-Effect Snow
+2020,August,23,1,Thunderstorm Wind
+2020,November,2,1,Heavy Snow
+2020,August,11,1,Thunderstorm Wind
+2020,September,10,1,Heavy Snow
+2020,September,18,1,Lake-Effect Snow
+2020,September,21,1,Flash Flood
+2020,August,10,1,Hail
+2020,September,7,1,Lakeshore Flood
+2020,December,24,1,Winter Storm
+2020,December,29,1,Thunderstorm Wind
+2020,August,18,1,Thunderstorm Wind
+2020,August,21,1,Heavy Rain
+2020,October,10,1,Thunderstorm Wind
+2020,October,1,1,Lightning
+2020,June,28,1,Thunderstorm Wind
+2020,June,29,1,Thunderstorm Wind
+2020,October,29,1,Thunderstorm Wind
+2020,June,2,1,Thunderstorm Wind
+2020,June,11,1,Lightning
+2020,June,5,1,Thunderstorm Wind
+2020,June,30,1,Flood
+2020,June,23,1,Flash Flood
+2020,June,3,1,Heavy Rain
+2020,June,6,1,Flash Flood
+2020,November,30,1,Heat
+2020,December,1,1,Thunderstorm Wind
+2021,June,21,1,Heat
+2021,March,1,1,Flood
+2021,May,26,1,Tornado
+2021,April,21,1,Thunderstorm Wind
+2021,April,30,1,Flash Flood
+2021,April,15,1,Thunderstorm Wind
+2021,February,1,1,Flash Flood
+2021,February,18,1,Flash Flood
+2021,February,15,1,Thunderstorm Wind
+2021,February,2,1,Heat
+2021,February,6,1,Lake-Effect Snow
+2021,February,7,1,Lightning
+2021,February,22,1,Hail
+2021,February,10,1,Drought
+2021,February,19,1,Drought
+2021,March,26,1,Thunderstorm Wind
+2021,June,7,1,Thunderstorm Wind
+2021,June,28,1,Thunderstorm Wind
+2021,June,30,1,Hail
+2021,June,14,1,High Wind
+2021,June,29,1,Tornado
+2021,June,9,1,Thunderstorm Wind
+2021,June,8,1,Thunderstorm Wind
+2021,June,4,1,Heat
+2021,June,13,1,Hail
+2021,June,20,1,Heat
+2021,June,3,1,Thunderstorm Wind
+2021,June,27,1,Heat
+2021,January,26,1,Heat
+2021,January,28,1,Heat
+2021,March,14,1,Rip Current
+2021,March,12,1,Hail
+2021,March,28,1,Thunderstorm Wind
+2021,January,1,1,Lightning
+2021,January,21,1,Heavy Rain
+2021,January,29,1,Thunderstorm Wind
+2021,January,16,1,Flash Flood
+2021,January,15,1,Heavy Rain
+2021,January,31,1,Thunderstorm Wind
+2021,January,17,1,Hail
+2021,January,3,1,Heavy Rain
+2021,January,19,1,Thunderstorm Wind
+2021,January,22,1,High Wind
+2021,February,20,1,Thunderstorm Wind
+2021,February,16,1,Thunderstorm Wind
+2021,February,9,1,Hail
+2021,May,25,1,High Wind
+2021,July,13,1,Hail
+2021,May,22,1,Lightning
+2021,March,29,1,Lake-Effect Snow
+2021,March,2,1,Thunderstorm Wind
+2021,March,13,1,Flash Flood
+2021,July,17,1,Frost/Freeze
+2021,July,6,1,Frost/Freeze
+2021,July,8,1,Flash Flood
+2021,July,20,1,Flash Flood
+2021,July,16,1,Flash Flood
+2021,July,25,1,Thunderstorm Wind
+2021,July,14,1,Thunderstorm Wind
+2021,July,9,1,Tropical Storm
+2021,July,19,1,Tornado
+2021,July,5,1,Flood
+2021,July,2,1,Flash Flood
+2021,July,7,1,Strong Wind
+2021,July,15,1,Tornado
+2021,July,29,1,Heat
+2021,August,26,1,High Wind
+2021,July,27,1,High Wind
+2021,August,11,1,Lakeshore Flood
+2021,August,1,1,Flash Flood
+2021,August,12,1,Lake-Effect Snow
+2021,August,21,1,Lake-Effect Snow
+2021,July,21,1,Rip Current
+2021,July,23,1,Flash Flood
+2021,July,18,1,Thunderstorm Wind
+2021,July,11,1,Seiche
+2021,August,19,1,Winter Storm
+2021,July,12,1,Hail
+2021,August,18,1,Tornado
+2021,August,27,1,Winter Storm
+2021,August,28,1,Thunderstorm Wind
+2021,August,22,1,Drought
+2021,August,13,1,Thunderstorm Wind
+2021,August,29,1,Hail
+2021,August,17,1,Tornado
+2021,August,7,1,Hail
+2021,August,23,1,Lightning
